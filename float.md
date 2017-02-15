@@ -134,6 +134,8 @@
 ```
 5、<a id="父元素设置`display:table`">父元素设置`display:table`</a>
 >还是存在兼容问题，`display:table`系列样式设定不在IE6/7的支持范围之内。
+
+
 ```html
     <style type="text/css">
         .container{
@@ -155,6 +157,6 @@
 <strong>注</strong>：  
 
     1、当一个元素浮动之后，不会影响到块级框的布局而只会影响内联框（通常是文本）的排列。
-    2、非浮动元素里的内容会留出前面浮动元素的位置(盒模型的位置)，可能和属于同一box有关（`inline-box`）。
-    3、`inline-box`与`line-box`的概念、`float`与`inline-block`的区别
+    2、非浮动元素里的内容会留出前面浮动元素的位置(盒模型的位置)，可能和属于同一box有关（inline-box）。
+    3、inline-box与line-box的概念、float与inline-block的区别
 
