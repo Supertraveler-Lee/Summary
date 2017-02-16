@@ -12,7 +12,7 @@
     * [使用::after伪元素](#使用after伪元素)
     * [使用`overflow`属性`hidden`或者`auto`](#使用overflow属性hidden或者auto)
     * [将容器设置成`float`](#将容器设置成float)
-    * [父元素设置`display:table`](#父元素设置display:table)
+    * [父元素设置`display:table`](#父元素设置display table)
 * [总结](#总结)
 
 ##<a id="相关概念">相关概念</a>：
@@ -132,7 +132,7 @@
         <li class="floatright">
     </ul>
 ```
-5、<a id="父元素设置display:table">父元素设置`display:table`</a>
+5、<a id="父元素设置display table">父元素设置`display:table`</a>
 >还是存在兼容问题，`display:table`系列样式设定不在IE6/7的支持范围之内。
 
 
