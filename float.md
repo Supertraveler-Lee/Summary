@@ -8,11 +8,11 @@
 * [如何触发BFC](#如何触发BFC)
 * [BFC特性](#BFC特性)
 * [常用闭合浮动解决方法](#常用闭合浮动解决方法)    
-    * [使用带clear的空标签或者br标签](#使用带clear的空标签或者br标签)
-    * [使用::after伪元素](#使用::after伪元素)
-    * [使用`overflow`属性`hidden`或者`auto`](#使用`overflow`属性`hidden`或者`auto`)
-    * [将容器设置成`float`](#将容器设置成`float`)
-    * [父元素设置`display:table`](#父元素设置`display:table`)
+    * [使用带clear的空标签或者br标签](#使用带clear的空标签或者br标签)    
+    * [使用::after伪元素](#使用after伪元素)
+    * [使用`overflow`属性`hidden`或者`auto`](#使用overflow属性hidden或者auto)
+    * [将容器设置成`float`](#将容器设置成float)
+    * [父元素设置`display:table`](#父元素设置display:table)
 * [总结](#总结)
 
 ##<a id="相关概念">相关概念</a>：
@@ -77,7 +77,7 @@
      
 ```
 
-2、<a id="使用::after伪元素">使用::after伪元素</a>
+2、<a id="使用after伪元素">使用::after伪元素</a>
 >after默认行内元素，这个用法的after只针对块元素。推荐用法
 
 ```html
@@ -100,7 +100,7 @@
 
 ```
 
-3、<a id="使用`overflow`属性`hidden`或者`auto`">使用`overflow`属性`hidden`或者`auto`</a>
+3、<a id="使用overflow属性hidden或者auto">使用`overflow`属性`hidden`或者`auto`</a>
 >浮动导致脱离文档流，而`overflow`可以使文档重回文档流，把容器高度撑起。
 >内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素。
 >甚至会导致中键不能用。
@@ -118,7 +118,7 @@
     </div>
 ```
 
-4、<a id="将容器设置成`float`">将容器设置成`float`</a>
+4、<a id="将容器设置成float">将容器设置成`float`</a>
 >同overflow法一样无须添加额外的class，使用方便但是会对下面的文档造成影响。
 
 ```html
@@ -132,7 +132,7 @@
         <li class="floatright">
     </ul>
 ```
-5、<a id="父元素设置`display:table`">父元素设置`display:table`</a>
+5、<a id="父元素设置display:table">父元素设置`display:table`</a>
 >还是存在兼容问题，`display:table`系列样式设定不在IE6/7的支持范围之内。
 
 
