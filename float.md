@@ -10,7 +10,7 @@
 * [常用闭合浮动解决方法](#常用闭合浮动解决方法)    
     * [使用带clear的空标签或者br标签](#使用带clear的空标签或者br标签)
     * [使用::after伪元素](#使用::after伪元素)
-    * 9[使用`overflow`属性`hidden`或者`auto`](#使用`overflow`属性`hidden`或者`auto`)
+    * [使用`overflow`属性`hidden`或者`auto`](#使用`overflow`属性`hidden`或者`auto`)
     * [将容器设置成`float`](#将容器设置成`float`)
     * [父元素设置`display:table`](#父元素设置`display:table`)
 * [总结](#总结)
