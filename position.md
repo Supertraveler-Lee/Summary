@@ -6,7 +6,7 @@
 * [relative特性](#relative特性)
 * [z-index特性](#z-index特性)
 
-
+![](https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/assets/Visual-formatting-model.jpg)
 ###<a id="浮动常用值">浮动常用值</a>
 * static
 * relative
