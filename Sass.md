@@ -12,68 +12,72 @@
 
 ##基本功能
 * 监听文件或目录
-    `sass --watch input.css:output.css`
-    `sass --watch app/sass:public/stylesheets`
-* 变量
-    ```sass
-    $bule: #1875e7;
-    div {
-        color: $blue;
-    }```
 
-    ```sass
-    $side: left;
-    .round {
-        border-#{$side}-radio: 10px;
-    }```
+        sass --watch input.css:output.css    
+        sass --watch app/sass:public/stylesheets
+
+* 变量       
+
+        $bule: #1875e7;
+        div {
+            color: $blue;
+        }
+
+
+        $side: left;
+        .round {
+            border-#{$side}-radio: 10px;
+        }
+
 
 * 计算
-    ```sass
-    body {
-        margin: (14px/2);
-        top: 50px + 30px;
-        right: $var * 10%;
-    }```
+
+        body {
+            margin: (14px/2);
+            top: 50px + 30px;
+            right: $var * 10%;
+        }
 
 * 嵌套
-    ```sass
-    div {
-        h1 {
-        color: red;
+
+        div {
+            h1 {
+            color: red;
+            }
         }
-    }
 
 * 注释
     * 除了标注的css注释还有sass特有的 `/*!*/`
-    * 静默注释 //只会出现在sass文件中
+    * 静默注释 `//`只会出现在sass文件中
 
 ##复用代码
 * 继承
-    ```css
-    .class {
-        border: 1px solid #ddd;
-    }
+    
+        .class {
+            border: 1px solid #ddd;
+        }
 
-    .class2 {
-        @extend .class1;
-        font-size: 120%;
-    }```
+        .class2 {
+            @extend .class1;
+            font-size: 120%;
+        }
 
 * Mixin混合器
-    ```css
-    @mixin left($value: 5px;) {
-        float: left;
-        margin-right: $value;
-    }
+    
+        @mixin left($value: 5px;) {
+            float: left;
+            margin-right: $value;
+        }
 
-    div {
-        @include left(20px);
-    }```
+        div {
+            @include left(20px);
+        }
 
 * import插入文件
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
-* 特殊结构&
+* 特殊结构`&`
     * 父选择器的标识符
+    
 * 默认变量值
     * !default 类似于！important的反值
 
