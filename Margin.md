@@ -80,6 +80,8 @@
 ####8、margin浏览器bug      
 
     IE6浮动双倍margin 
+    产生条件：
+    block + 浮动 + margin 
     解决办法：
     1、 _margin-left 单独hack
     2、_dislpay: inline  更优
